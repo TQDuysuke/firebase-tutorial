@@ -23,7 +23,7 @@ function Sends(){
     Number = parseFloat(document.getElementById('Number').value);
 const db = getDatabase();
   set(ref(db, 'Number/'), {
-    Value : Number
+    value : Number
   });
 }
 
