@@ -29,7 +29,7 @@ const db = getDatabase();
 
 function Getval(){
     const dbRef = ref(getDatabase());
-    get(child(dbRef, `Number` + '/Value')).then((snapshot) => {
+    get(child(dbRef, `Number` + '/value')).then((snapshot) => {
       if (snapshot.exists()) {
         console.log(snapshot.val());
         document.getElementById('Texter').innerHTML = snapshot.val();
